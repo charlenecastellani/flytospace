@@ -1,0 +1,2 @@
+class VoyagesController < ApplicationController
+end
