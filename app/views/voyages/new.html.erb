@@ -1,0 +1,11 @@
+<%= form_for(@voyage) do |f| %>
+  <%= f.label :destination %>
+  <%= f.text_field :destination %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.label :year %>
+  <%= f.number_field :year %>
+  <%= f.label :price %>
+  <%= f.number_field :price %>
+  <%= f.submit %>
+<% end %>
