@@ -4,12 +4,19 @@ class VoyagesController < ApplicationController
     @voyages = Voyage.all
   end
 
+  def show
+    @voyage = Voyage.find(params[:id])
+  end
+  
   def new
     @voyage = Voyage.new
   end
-  
-  def show
-    @voyage = Voyage.find(params[:id])
+
+  def create 
+    @voyage = Voyage.create(voyage_params)
+    @voyage.save 
+
+    redirect_to voyage_path(@voyage)
   end
   
   def edit
@@ -28,7 +35,11 @@ class VoyagesController < ApplicationController
     @voyage.destroy
 
     # no need for app/views/voyages/destroy.html.erb
-    redirect_to root_path
+    redirect_to voyages_path
+  end
+
+  def dashboard
+    @voyages = Voyage.where(id: current_user)
   end
 
   private
