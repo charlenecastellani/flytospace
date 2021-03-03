@@ -15,7 +15,6 @@ ActiveRecord::Schema.define(version: 2021_03_01_204342) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-
   create_table "reservations", force: :cascade do |t|
     t.string "statut"
     t.datetime "created_at", precision: 6, null: false
