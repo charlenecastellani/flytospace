@@ -35,7 +35,7 @@ class VoyagesController < ApplicationController
     @voyage.destroy
 
     # no need for app/views/voyages/destroy.html.erb
-    redirect_to root_path
+    redirect_to voyages_path
   end
 
   private
