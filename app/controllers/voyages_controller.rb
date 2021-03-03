@@ -1,6 +1,5 @@
 class VoyagesController < ApplicationController
 
-
   def index
     @voyages = Voyage.all
   end
