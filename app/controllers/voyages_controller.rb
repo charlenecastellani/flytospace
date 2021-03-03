@@ -4,12 +4,19 @@ class VoyagesController < ApplicationController
     @voyages = Voyage.all
   end
 
+  def show
+    @voyage = Voyage.find(params[:id])
+  end
+  
   def new
     @voyage = Voyage.new
   end
-  
-  def show
-    @voyage = Voyage.find(params[:id])
+
+  def create 
+    @voyage = Voyage.create(voyage_params)
+    @voyage.save 
+
+    redirect_to voyage_path(@voyage)
   end
   
   def edit
