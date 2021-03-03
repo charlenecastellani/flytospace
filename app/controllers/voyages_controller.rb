@@ -38,6 +38,10 @@ class VoyagesController < ApplicationController
     redirect_to root_path
   end
 
+  def dashboard
+    @voyages = Voyage.where(id: current_user)
+  end
+
   private
 
   def voyage_params
