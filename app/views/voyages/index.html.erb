@@ -1,0 +1,8 @@
+<h1>index</h1>
+
+<ul>
+  <% @voyages.each do |voyage| %>
+    <%= link_to voyage.destination, voyage_path(voyage) %>
+    <br>
+  <% end %>
+</ul>
