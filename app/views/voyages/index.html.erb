@@ -2,6 +2,7 @@
 
 <ul>
   <% @voyages.each do |voyage| %>
-    <li><%= voyage.name %></li>
+    <%= link_to voyage.destination, voyage_path(voyage) %>
+    <br>
   <% end %>
 </ul>

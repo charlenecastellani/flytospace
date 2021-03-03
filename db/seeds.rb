@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+voyage1 = Voyage.create(destination: "Mars", description: "vol aller retour en fusée XXX", year: "2035", price: "2000000")
+voyage2 = Voyage.create(destination: "Lune", description: "séjour sur la lune ", year: "2029", price: "1000000")
