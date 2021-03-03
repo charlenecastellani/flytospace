@@ -10,7 +10,7 @@ class VoyagesController < ApplicationController
   end
   
   def show
-    @voyages = Voyage.find(params[:id])
+    @voyage = Voyage.find(params[:id])
   end
   
   def edit
