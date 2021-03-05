@@ -8,341 +8,96 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <!--- Detection device screen --->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--- Template --->
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+     <!--- Bootstrap & Fonts ici --->
+     <!--- Stylesheet --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!--- Fontawesome --->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
+<title>FlytoSpace</title>
 
+</head>
+<body>
 
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__logo">
-        <img src="https://www.flaticon.com/svg/vstatic/svg/1055/1055646.svg?token=exp=1614938109~hmac=1974f12796a5623fc3a99e46ae810fa3" alt="Logo" width="30px" />
-      </div>
-      <div class="header__search">
-        <button>Selected Planet</button>
-        <span></span>
-        <button> Year 2024 - 2025 </button>
-        <span></span>
-        <button>
-          2 guests
-          <div class="header__searchIcon">
-            <img src="https://www.flaticon.com/svg/vstatic/svg/4272/4272880.svg?token=exp=1614938044~hmac=226963dee28a9778ba803f720b1cf286" alt="Search Icon" />
-          </div>
-        </button>
-      </div>
-      <div class="header__nav">
-        <a href="" class="header__nav__button header__nav__button-greyHover"
-          >Become a host</a
-        >
-        <button
-          class="header__nav__button header__nav__button-language header__nav__button-greyHover"
-        >
-          <img src="/icons/globe.svg" alt="Globe" />
-          <img src="/icons/chevronDown.svg" alt="Chevron down" />
-        </button>
-        <button class="header__nav__button header__nav__button-account">
-          <img src="/icons/hamburger.svg" alt="Hamburger" />
-          <img src="/icons/account.svg" alt="Account" />
-        </button>
-      </div>
-    </header>
+     <!--- Code --->
 
-<div class="main">
-      <div class="main__content">
-        <span> 56+ stays · Year 2024 - 2025 · 2 guests</span>
-        <h1>Stays in selected map area</h1>
-        <div class="main__filters">
-          <button class="outlined curved">Cancellation flexibility</button>
-          <button class="outlined curved">Type of place</button>
-          <button class="outlined curved">Price</button>
-          <button class="outlined curved">Instant book</button>
-          <button class="outlined curved">More filters</button>
-        </div>
-        <div class="main__scarcity">
-          <img src="/icons/calendar.gif" alt="Calendar" />
-          <span><span>
-              79% of our destinations for your dates and guests are
-              already booked. <br></span></span
-            >
-
-          </span>
-        </div>
-        <div class="listings">
-          <div class="listings__item">
-            <div class="listings__image listings__image-superHost">
-              <button>
-                <img src="/icons/chevronLeft.svg" alt="Chevron Left">
-              </button>
-              <button>
-                <img src="/icons/chevronRight.svg" alt="Chevron Right">
-              </button>
-              <img src="https://cdn.pixabay.com/photo/2017/05/10/17/11/moon-2301341_960_720.jpg" alt="Moon">
-            </div>
-            <div class="listings__content">
-              <div class="listings__title">
-                <div class="listings__icon__text">
-                  <span class="greyText">Private home quarter at the Moon</span>
-                  <h2>Beautiful view on Earth</h2>
-                </div>
-                <div class="listings__title__icon">
-                  <button>
-                    <img src="/icons/heart.svg" alt="Heart">
-                  </button>
-                </div>
-              </div>
-              <div class="separator"></div>
-              <div class="listings__description">
-                <span class="greyText">2 Guest · 1 bedroom</span>
-                <span class="greyText">Kitchen · 5G · Heating · EcoGarden </span>
-              </div>
-              <div class="listings__details">
-                <div class="listings__rating">
-                  <img src="/icons/star.svg" alt="Star">
-                  <span>5 <span>(14)</span></span>
-                </div>
-                <div class="listings__price">
-                  <div class="listings__price__night">
-                    15M€ <span> /trip </span>
-                  </div>
-                  <div class="listings__price__total">
-                    <span>30M€ total</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="listings__item">
-            <div class="listings__image listings__image-superHost">
-              <button>
-                <img src="/icons/chevronLeft.svg" alt="Chevron Left">
-              </button>
-              <button>
-                <img src="/icons/chevronRight.svg" alt="Chevron Right">
-              </button>
-              <img src="https://images.pexels.com/photos/586030/pexels-photo-586030.jpeg?cs=srgb&dl=pexels-spacex-586030.jpg&fm=jpg" alt="Mars">
-            </div>
-            <div class="listings__content">
-              <div class="listings__title">
-                <div class="listings__icon__text">
-                  <span class="greyText">Private home quarter on Mars</span>
-                  <h2>Private quarter with gardens and landfield</h2>
-                </div>
-                <div class="listings__title__icon">
-                  <button>
-                    <img src="/icons/heart.svg" alt="Heart">
-                  </button>
-                </div>
-              </div>
-              <div class="separator"></div>
-              <div class="listings__description">
-                <span class="greyText">2 Guest · 1 bedroom</span>
-                <span class="greyText">Kitchen · 5G/wifi · Heating · EcoGarden </span>
-              </div>
-              <div class="listings__details">
-                <div class="listings__rating">
-                  <img src="/icons/star.svg" alt="Star">
-                  <span>5 <span>(14)</span></span>
-                </div>
-                <div class="listings__price">
-                  <div class="listings__price__night">
-                    30M€ <span> / trip</span>
-                  </div>
-                  <div class="listings__price__total">
-                    <span>60M€ total</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="listings__item">
-            <div class="listings__image listings__image-superHost">
-              <button>
-                <img src="/icons/chevronLeft.svg" alt="Chevron Left">
-              </button>
-              <button>
-                <img src="/icons/chevronRight.svg" alt="Chevron Right">
-              </button>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Artist%E2%80%99s_impression_of_Proxima_Centauri_b_shown_hypothetically_as_an_arid_rocky_super-earth.jpg" alt="Proxima Century">
-            </div>
-            <div class="listings__content">
-              <div class="listings__title">
-                <div class="listings__icon__text">
-                  <span class="greyText">Private appartment in Prima Century B</span>
-                  <h2>Exclusive home in Prima Century B</h2>
-                </div>
-                <div class="listings__title__icon">
-                  <button>
-                    <img src="/icons/heart.svg" alt="Heart">
-                  </button>
-                </div>
-              </div>
-              <div class="separator"></div>
-              <div class="listings__description">
-                <span class="greyText">4 Guests · 3 bedroom · 2 quarters </span>
-                <span class="greyText"> 2 Kitchens · 6G/Wifi · Heating/cooling · EcoGarden · Facilities included</span>
-              </div>
-              <div class="listings__details">
-                <div class="listings__rating">
-                  <img src="/icons/star.svg" alt="Star">
-                  <span>5 <span>(14)</span></span>
-                </div>
-                <div class="listings__price">
-                  <div class="listings__price__night">
-                    120€ <span> / trip</span>
-                  </div>
-                  <div class="listings__price__total">
-                    <span>240M€ total</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="listings__item">
-            <div class="listings__image listings__image-superHost">
-              <button>
-                <img src="/icons/chevronLeft.svg" alt="Chevron Left">
-              </button>
-              <button>
-                <img src="/icons/chevronRight.svg" alt="Chevron Right">
-              </button>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/GJ_699b.jpg" alt="Barnard">
-            </div>
-            <div class="listings__content">
-              <div class="listings__title">
-                <div class="listings__icon__text">
-                  <span class="greyText">Double quarter in Barnard's Star</span>
-                  <h2>Double quarter in the calm Barnard's Star</h2>
-                </div>
-                <div class="listings__title__icon">
-                  <button>
-                    <img src="/icons/heart.svg" alt="Heart">
-                  </button>
-                </div>
-              </div>
-              <div class="separator"></div>
-              <div class="listings__description">
-                <span class="greyText">Up to 6 Guest · 4 bedroom</span>
-                <span class="greyText">3 GigaKitchen · 3G/Wifi · Heating/cooling  · EcoGarden  </span>
-              </div>
-              <div class="listings__details">
-                <div class="listings__rating">
-                  <img src="/icons/star.svg" alt="Star">
-                  <span>5 <span>(14)</span></span>
-                </div>
-                <div class="listings__price">
-                  <div class="listings__price__night">
-                    220M€ <span> / trip</span>
-                  </div>
-                  <div class="listings__price__total">
-                    <span> 440M€ total</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="listings__item">
-            <div class="listings__image listings__image-superHost">
-              <button>
-                <img src="/icons/chevronLeft.svg" alt="Chevron Left">
-              </button>
-              <button>
-                <img src="/icons/chevronRight.svg" alt="Chevron Right">
-              </button>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Gliese_667_Cc_sunset.jpg/1280px-Gliese_667_Cc_sunset.jpg" alt="superEarth">
-            </div>
-            <div class="listings__content">
-              <div class="listings__title">
-                <div class="listings__icon__text">
-                  <span class="greyText">Private trip to Super Earth</span>
-                  <h2>Be the first one to explore Super Earth</h2>
-                </div>
-                <div class="listings__title__icon">
-                  <button>
-                    <img src="/icons/heart.svg" alt="Heart">
-                  </button>
-                </div>
-              </div>
-              <div class="separator"></div>
-              <div class="listings__description">
-                <span class="greyText"> 6 Guests · 3 quarters</span>
-                <span class="greyText"> 4 Kitchens · 3G/Wifi · Heating · Heating/cooling  · EcoGarden · Spa </span>
-              </div>
-              <div class="listings__details">
-                <div class="listings__rating">
-                  <img src="/icons/star.svg" alt="Star">
-                  <span>5 <span>(14)</span></span>
-                </div>
-                <div class="listings__price">
-                  <div class="listings__price__night">
-                    450M€ <span> / trip</span>
-                  </div>
-                  <div class="listings__price__total">
-                    <span> 920M€ total</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="main__map">
-        <div class="main__googleMap">
-          <div id="map"></div>
-        </div>
+  <div class="border-bottom py-3">
+    <div class="container">
+    <!--- Justify content gauche/droite --->
+      <div class="d-flex justify-content-between align-items-center">
+      <!--- Logo  --->
+       <a href="https://www.flaticon.com/svg/vstatic/svg/2285/2285537.svg?token=exp=1614812798~hmac=a5ea9776c539474084fc1dd206ee422e">
+        <img border="0" alt="Rocket" width="100" height="100"></a>
+        <a href="#" class="btn btn-primary btn-lg">Login</a>
       </div>
     </div>
-    <footer>
-      <div class="container">
-       <div>
-          <h4>About</h4>
-          <ul>
-            <li>How FlyToSpace works</li>
-            <li>Newsquarters</li>
-            <li>FlyToSpace Plus</li>
-            <li>FlyToSpace Luxe</li>
-            <li>FlyToSpace CGQ</li>
-          </ul>
+  </div>
+
+
+   <!--- Photo Home --->
+
+  <div class="container py-3">
+    <img src="https://images.pexels.com/photos/586056/pexels-photo-586056.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="space" class="rounded w-100">
+
+    <!--- Text paragraph  --->
+    <div class="py-3">
+      <h1>Welcome to FlytoSpace</h1>
+
+       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      </p>
+    </div>
+
+
+      <!--- Text paragraph  --->
+      <form action="#" class="border p-3 rounded">
+        <h2>Book this quarter</h2>
+
+        <!--- Champ formgroup --->
+        <div class="form-group">
+          <label for="message">Write your message</label>
+        <!--- Input mail, date, name? + placeholder grisé  +label avec id message--->
+        <!--- Form control for design--->
+          <input class="form-control" type="text" placeholder="your message here" id="message">
         </div>
-          </ul>
+
+        <div class="form-group">
+          <label for="checkin">Checkin</label>
+        <!--- Input mail, date, name? + placeholder grisé  +label avec id message--->
+        <!--- Form control for design--->
+          <input class="form-control" type="date" placeholder="yyyy" id="Checkin">
         </div>
-      </div>
-    </footer>
-  </body>
 
-  <script
-  async
-  defer
-  src="https://maps.googleapis.com/maps/api/js?key=ENTER_KEY_HERE&callback=initMap"
-></script>
+        <div class="form-group">
+          <label for="checkout">Checkout</label>
+        <!--- Input mail, date, name? + placeholder grisé  +label avec id message--->
+        <!--- Form control for design--->
+          <input class="form-control" type="date" placeholder="yyyy" id="checkout">
+        </div>
 
-  <script>
-    function initMap () {
-      const map = new google.maps.Map(document.getElementById('map'), {
-        center: {
-          lat: -30,
-          lng: 150,
-        },
-        zoom: 8
-      });
-    }
-  </script>
+         <!--- Submit button --->
+         <input type="submit" value="Book now" class="btn btn-primary w-100">
 
-</html>
+      </form>
+    </div>
 
 
 
-
-
-
-
+      <!--- Jquery (pour bootstrap's Javascript plugings) --->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <!--- Popper.js (pour bootstrap's Javascript plugings) --->
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+       <!---  Bootstrap's Javascript Librairy) --->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
    </body>
    </html>
 
