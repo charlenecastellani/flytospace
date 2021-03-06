@@ -1,5 +1,5 @@
 class VoyagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: :home
+  skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
     @voyages = Voyage.all
@@ -14,7 +14,8 @@ class VoyagesController < ApplicationController
   end
 
   def create 
-    @voyage = Voyage.create(voyage_params)
+    @voyage = Voyage.new(voyage_params)
+    @voyage.user_id = current_user.id
     @voyage.save 
 
     redirect_to voyage_path(@voyage)
