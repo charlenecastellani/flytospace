@@ -4,28 +4,36 @@
 
 <center>
 
-<h1>Voyagez sur la planéte Moon</h1>
+<h1><%= @voyage.destination %>
+
+
+
+</h1>
+
+<p><%= @voyage.year %></p>
+
 </center>
 
 <div>
 
 <center>
-<p>Book a beautiful quarter at the Moon.</p>
-=======
-<h2><%= @voyage.destination %></h2>
-<p><%= @voyage.description %></p>
-<p><%= @voyage.year %></p>
-<p><%= @voyage.price %></p>
 
-<%= link_to "back to list", root_path %>
+
 
 
 <div class="card" style="width: 58rem;">
-  <img class="card-img-top" src="https://www.sciencesource.com/Doc/TR1_WATERMARKED/d/c/a/e/SS2743295.jpg?d63644329083" alt="Quarter Moon">
+  <img class="card-img-top" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nasa-4-1532959579.jpg?crop=1xw:1xh;center,top&resize=768:*" alt="Quarter Mars">
   <div class="card-body">
-    <h5 class="card-title">Moon</h5>
-    <p> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-    <a href="#" class="btn btn-primary">Reservez</a>
+    <!---
+    <h5 class="card-title">Mars</h5>
+    --->
+    <strong><p><%= @voyage.price %>M€</strong></p>
+    <p><%= @voyage.description %></p>
+
+
+    <a href="" class="btn btn-primary">Reservez</a>
+
+    <%= link_to "back to list", root_path %>
   </div>
 </div>
 
@@ -35,7 +43,7 @@
 </div>
 
 
-<!---  --->
+<!---
 
 
 <h2><%= @voyage.destination %> The Moon</h2>
@@ -45,3 +53,5 @@
 <%= link_to "Delete", voyage_path(@voyage), method: :delete %>
 <%= link_to "back to list", root_path %>
 
+
+--->
