@@ -1,12 +1,57 @@
-<h2><%= @voyage.destination %></h2>
-<p><%= @voyage.description %></p>
-<p><%= @voyage.year %></p>
-<p><%= @voyage.price %></p>
 
+<br>
+<br>
+
+<center>
+
+<h1><%= @voyage.destination %>
+
+
+
+</h1>
+
+<p><%= @voyage.year %></p>
+
+</center>
+
+<div>
+
+<center>
+
+
+
+
+<div class="card" style="width: 58rem;">
+  <img class="card-img-top" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nasa-4-1532959579.jpg?crop=1xw:1xh;center,top&resize=768:*" alt="Quarter Mars">
+  <div class="card-body">
+    <!---
+    <h5 class="card-title">Mars</h5>
+    --->
+    <strong><p><%= @voyage.price %>M€</strong></p>
+    <p><%= @voyage.description %></p>
+
+
+    <a href="" class="btn btn-primary">Reservez</a>
+
+    <%= link_to "back to list", root_path %>
+  </div>
+</div>
+
+<br>
+
+</center>
+</div>
+
+
+<!---
+
+
+<h2><%= @voyage.destination %> The Moon</h2>
+<p><%= @voyage.description %>Book a beautiful quarter at the Moon </p>
+<p><%= @voyage.year %>2023</p>
+<p><%= @voyage.price %>50</p>
+<%= link_to "Delete", voyage_path(@voyage), method: :delete %>
 <%= link_to "back to list", root_path %>
 
 
-<h2>TEST SHOW VOYAGES</h2>
-
-
-
+--->
