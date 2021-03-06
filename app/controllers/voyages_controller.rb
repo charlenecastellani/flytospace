@@ -39,7 +39,7 @@ class VoyagesController < ApplicationController
   end
 
   def dashboard
-    @voyages = Voyage.where(id: current_user)
+    @voyages = Voyage.where(user_id: current_user.id)
   end
 
   private
