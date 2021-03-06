@@ -7,24 +7,6 @@
 <!--- Creer voyages --->
 <br>
 
-
-
-    <% @voyages.each do |voyage| %>
-      <%= link_to voyage_path(voyage) do  %>
-       <div class="card-deck">
-         <div class="card">
-          <img class="card-img-top" src="https://images.pexels.com/photos/586056/pexels-photo-586056.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-       </div>
-    <% end %>
-  <% end %>
-
-
-
    <!--- Photo Home --->
     <!--- Carousel  --->
 
@@ -41,12 +23,44 @@
       </p>
     </div>
 
+
+
+
+    <% @voyages.each do |voyage| %>
+      <%= link_to voyage_path(voyage) do  %>
+       <div class="card-deck">
+         <div class="card">
+          <img class="card-img-top" src="https://images.pexels.com/photos/586056/pexels-photo-586056.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Planet - Moon</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+       </div>
+    <% end %>
+  <% end %>
+
+
+
+
+
+
+
+
+
+
        <!--- Mosaique voyages/layout --->
 
           <!--- Grille bootstrap  --->
 
 
-      <div class="card-deck">
+<!--- Dur a supprimer  --->
+
+
+
+<!--- Dur a supprimer --->
+
+      <!-- <div class="card-deck">
         <div class="card">
           <img class="card-img-top" src="https://images.pexels.com/photos/586056/pexels-photo-586056.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Card image cap">
           <div class="card-body">
@@ -74,9 +88,10 @@
       </div>
 
       <br>
+       --->
 
         <!--- Partie 2   --->
-
+<!--
          <div class="card-deck">
         <div class="card">
           <img class="card-img-top" src="..." alt="Card image cap">
@@ -104,12 +119,9 @@
         </div>
       </div>
 
-
-
-        <!--- Champ formgroup --->
-
     </div>
 
+    --->
 
 
       <!--- Jquery (pour bootstrap's Javascript plugings) --->
