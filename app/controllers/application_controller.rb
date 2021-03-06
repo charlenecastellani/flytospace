@@ -1,8 +1,4 @@
 class ApplicationController < ActionController::Base
-
-
-def voyages
-  @voyages = Voyage.all
-end
+  before_action :authenticate_user!
 
 end
