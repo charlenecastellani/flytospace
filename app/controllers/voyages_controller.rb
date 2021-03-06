@@ -29,7 +29,7 @@ class VoyagesController < ApplicationController
     @voyage = Voyage.find(params[:id])
     @voyage.update(voyage_params)
 
-    redirect_to voyage_path(@voyage)
+    redirect_to dashboard_voyages_path(@voyage)
   end
 
   def destroy
