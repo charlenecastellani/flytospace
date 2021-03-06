@@ -18,7 +18,7 @@ class VoyagesController < ApplicationController
     @voyage.user_id = current_user.id
     @voyage.save 
 
-    redirect_to voyage_path(@voyage)
+    redirect_to dashboard_voyages_path(@voyage)
   end
   
   def edit
