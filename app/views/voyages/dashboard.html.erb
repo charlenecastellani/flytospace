@@ -21,16 +21,19 @@
         </div>
     </div>
     <%= link_to "Delete", voyage_path(voyage), method: :delete %>
+    <%= link_to "Edit", edit_voyage_path(voyage) %>
 </div>
 <%end%>
 
 <br>
 <%= link_to "Add a voyage", new_voyage_path, class: "btn btn-primary btn-lg" %>
+
 <br>
 <%= link_to "back to list", root_path %>
 
 
 </center>
+
 
 
 
