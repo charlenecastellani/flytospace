@@ -22,15 +22,13 @@
 
 
 <div class="card" style="width: 58rem;">
-  <img class="card-img-top" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nasa-4-1532959579.jpg?crop=1xw:1xh;center,top&resize=768:*" alt="Quarter Mars">
+ <%= cl_image_tag @voyage.photo.key, height: 300, width: 400, crop: :fill %>
   <div class="card-body">
     <!---
     <h5 class="card-title">Mars</h5>
     --->
     <strong><p><%= @voyage.price %>M€</strong></p>
     <p><%= @voyage.description %></p>
-
-
     <a href="" class="btn btn-primary">Reservez</a>
 
     <%= link_to "back to list", root_path %>
