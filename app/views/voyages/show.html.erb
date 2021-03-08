@@ -19,14 +19,12 @@
 <center>
 
 
-
-
 <div class="card" style="width: 58rem;">
  <%= cl_image_tag @voyage.photo.key, height: 300, width: 400, crop: :fill %>
   <div class="card-body">
-    <!---
+    
     <h5 class="card-title">Mars</h5>
-    --->
+    
     <strong><p><%= @voyage.price %>M€</strong></p>
     <p><%= @voyage.description %></p>
     <a href="" class="btn btn-primary">Reservez</a>
@@ -41,15 +39,12 @@
 </div>
 
 
-<!---
-
-
 <h2><%= @voyage.destination %> The Moon</h2>
 <p><%= @voyage.description %>Book a beautiful quarter at the Moon </p>
 <p><%= @voyage.year %>2023</p>
 <p><%= @voyage.price %>50</p>
+
 <%= link_to "Delete", voyage_path(@voyage), method: :delete %>
 <%= link_to "back to list", root_path %>
 
 
---->
