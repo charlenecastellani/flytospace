@@ -7,7 +7,7 @@
     <div class="col-md-12">
       <h1>Create a new voyage</h1>
       <br>
-      <%= form_for(@voyage) do |f| %>
+      <%= simple_form_for(@voyage) do |f| %>
       <%= f.label :destination %>
       <%= f.text_field :destination %>
       <%= f.label :description %>
@@ -16,6 +16,8 @@
       <%= f.number_field :year %>
       <%= f.label :price %>
       <%= f.number_field :price %>
+      <%= f.label :price %>
+      <%= f.input :photo, as: :file %>
       <%= f.submit %>
       <% end %>
     </div>

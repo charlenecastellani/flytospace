@@ -22,7 +22,8 @@
 
 
 <div class="card" style="width: 58rem;">
-  <img class="card-img-top" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nasa-4-1532959579.jpg?crop=1xw:1xh;center,top&resize=768:*" alt="Quarter Mars">
+  <%= cl_image_tag @voyage.photo.key, height: 300, width: 400, crop: :fill %>
+  
   <div class="card-body">
     <!---
     <h5 class="card-title">Mars</h5>
