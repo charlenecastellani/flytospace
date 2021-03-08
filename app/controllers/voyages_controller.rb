@@ -47,6 +47,6 @@ class VoyagesController < ApplicationController
   private
 
   def voyage_params
-    params.require(:voyage).permit(:destination, :year, :description, :price)
+    params.require(:voyage).permit(:destination, :year, :description, :price, :photo)
   end
 end
