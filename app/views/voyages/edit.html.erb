@@ -1,11 +1,11 @@
-<h1>Voyages New</h1>
+<h1> Update Voyages</h1>
 
 <div class="container" >
   <div class="row justify-content-center">
     <div class="col-md-12">
-      <h1>Create a new voyage</h1>
+      <h1>Update a voyage</h1>
       <br>
-      <%= simple_form_for(@voyage) do |f| %>
+      <%= form_for(@voyage) do |f| %>
       <%= f.label :destination %>
       <%= f.text_field :destination %>
       <%= f.label :description %>
@@ -14,13 +14,8 @@
       <%= f.number_field :year %>
       <%= f.label :price %>
       <%= f.number_field :price %>
-      <%= f.label :price %>
-      <%= f.input :photo, as: :file %>
       <%= f.submit %>
       <% end %>
     </div>
   </div>
 </div>
-
-
-
