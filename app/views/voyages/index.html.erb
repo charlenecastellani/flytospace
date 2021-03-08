@@ -33,7 +33,7 @@
       <%= link_to voyage_path(voyage) do  %>
        <div class="card-deck">
          <div class="card">
-          <img class="card-img-top" src="https://images.pexels.com/photos/586056/pexels-photo-586056.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Card image cap">
+          <%= cl_image_tag voyage.photo.key, height: 100, width: 120, crop: :fill %>
             <div class="card-body">
                 <h5 class="card-title"><%= voyage.destination %></h5>
                 <p class="card-text"><%= voyage.year %></p>
