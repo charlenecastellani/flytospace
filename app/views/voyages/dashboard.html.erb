@@ -9,9 +9,8 @@
         </div>
     </div>
     <%= link_to "Delete", voyage_path(voyage), method: :delete %>
-    <%= link_to "Update", edit_voyage_path(voyage), method: :get %>
+    <%= link_to "Edit", edit_voyage_path(voyage) %>
 </div>
 <%end%>
 <%= link_to "Add a voyage", new_voyage_path, class: "btn btn-primary btn-lg" %>
 <%= link_to "back to list", root_path %>
-<%= link_to "session", new_user_session_path %>
