@@ -1,0 +1,38 @@
+
+<h1>Je réserve </h1>
+
+<center>
+
+<h1><%= @voyage.destination %>
+
+
+
+</h1>
+
+<p><%= @voyage.year %></p>
+
+</center>
+
+<div>
+
+<center>
+
+
+<div class="card" style="width: 58rem;">
+ <%= cl_image_tag @voyage.photo.key, height: 300, width: 400, crop: :fill %>
+  <div class="card-body">
+    
+    
+    <strong><p><%= @voyage.price %>M€</strong></p>
+    <p><%= @voyage.description %></p>
+    <p> agence : <%= @voyage.agency_name %></p>
+    <a href="" class="btn btn-primary">Reservez</a>
+
+    <%= link_to "back to list", root_path %>
+  </div>
+</div>
+
+<br>
+
+</center>
+</div>
