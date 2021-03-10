@@ -1,9 +1,15 @@
 Rails.application.routes.draw do
   devise_for :users
+
   root to: 'voyages#index'
   resources :voyages, except: [:index] do
     collection do 
       get :dashboard
+    end
+    resources :reservations, only: [:new, :create, :destroy] do
+      collection do
+      get :mes_reservations
+      end
     end
   end
     
