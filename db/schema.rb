@@ -57,7 +57,7 @@ ActiveRecord::Schema.define(version: 2021_03_09_150139) do
     t.string "first_name"
     t.string "last_name"
     t.string "agency_name"
-    t.boolean "agency_status", default: false
+    t.boolean "agency_status"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
