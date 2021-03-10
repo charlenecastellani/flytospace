@@ -4,10 +4,13 @@ class ReservationsController < ApplicationController
     end
     
     def create 
+        @voyage = Voyage.find(params[:voyage_id])
         @reservation = Reservation.new(reservation_params)
+        @reservation.voyage = @voyage
         @reservation.user_id = current_user.id
         @reservation.save 
-
+        
+    
     redirect_to mes_reservations_voyage_reservations_path(@reservation)
     end
 
