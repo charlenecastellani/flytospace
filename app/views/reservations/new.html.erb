@@ -3,14 +3,7 @@
 
 <center>
 
-<<<<<<< HEAD
 <h1><%= @voyage.destination %>
-=======
-<h1><%= voyage.destination %>
->>>>>>> 698b85ade2b23308b4a239eaa47a41fd2dbab805
-
-
-
 </h1>
 
 <p><%= @voyage.year %></p>
@@ -29,9 +22,9 @@
     
     <strong><p><%= @voyage.price %>M€</strong></p>
     <p><%= @voyage.description %></p>
-    <p> agence : <%= @voyage.agency_name %></p>
-    <a href="" class="btn btn-primary">Reservez</a>
-
+    <p> agence : <%= @voyage.user.agency_name %></p>
+    
+    <%= link_to "Confirmez", mes_reservations_voyage_reservations_path(@voyage), class: "btn btn-primary"%>
     <%= link_to "back to list", root_path %>
   </div>
 </div>
