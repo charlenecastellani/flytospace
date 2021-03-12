@@ -1,13 +1,9 @@
 
-<br>
-<br>
+<h1>Je réserve </h1>
 
 <center>
 
 <h1><%= @voyage.destination %>
-
-
-
 </h1>
 
 <p><%= @voyage.year %></p>
@@ -26,9 +22,9 @@
     
     <strong><p><%= @voyage.price %>M€</strong></p>
     <p><%= @voyage.description %></p>
-    <p> agence : <%= @voyage.user_id %></p>
+    <p> agence : <%= @voyage.user.agency_name %></p>
     
-   <%= link_to "Réservez", new_voyage_reservation_path(@voyage), class: "btn btn-primary"%>
+    <%= link_to "Confirmez", mes_reservations_voyage_reservations_path(@voyage), class: "btn btn-primary"%>
     <%= link_to "back to list", root_path %>
   </div>
 </div>
@@ -37,8 +33,3 @@
 
 </center>
 </div>
-
-
-<%= link_to "back to list", root_path %>
-
-
