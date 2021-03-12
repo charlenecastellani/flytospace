@@ -20,7 +20,7 @@ require("channels")
 
 // ----------------------------------------------------
 // Note(lewagon): ABOVE IS RAILS DEFAULT CONFIGURATION
-// WRITE YOUR OWN JS STARTING FROM HERE 👇
+// WRITE YOUR OWN JS STARTING FROM HERE
 // ----------------------------------------------------
 
 // External imports

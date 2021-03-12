@@ -1,33 +1,45 @@
 
-<!--- Creer lien du voyage
+<!--- Creer lien des voyages --->
+
+<h1>Welcome to Fly to Space</h1>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Gliese_667_Cc_sunset.jpg/1920px-Gliese_667_Cc_sunset.jpg"
+    alt="space" class="rounded w-100" height="800" width="1440">
+
+<div>
+  <h1>Welcome to Fly to Space</h1>
 
 
-<h1>INDEX/HOME</h1>
+</div>
 
+<div>
+   <!--- Link to voyages  --->
+</div>
+
+  <!--- New page  --->
+
+
+  <!--- div planet --->
+
+
+  <!--- Photo Home
+
+
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Gliese_667_Cc_sunset.jpg/1920px-Gliese_667_Cc_sunset.jpg" alt="space" class="rounded w-100" height="800" width="1440">
  --->
-
-<!--- Creer voyages --->
-
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Gliese_667_Cc_sunset.jpg/1920px-Gliese_667_Cc_sunset.jpg" alt="space" class="rounded w-100" height="1000" width="1440">
-   <!--- Photo Home --->
     <!--- Carousel  --->
+
 
     <div class="container py-3">
 
 
     <!--- Text paragraph  --->
-    <div class="py-3">
+    <div class="voyages">
 
-      <h1>Welcome to FlytoSpace</h1>
-
-       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+       <p>You can now travel anywhere in the cosmos. How about to look at our destinations below and book your travel. <br>
+         You can't get your own quarter and privacy with your own EcoGarden and facilities. Only few planets left. Don't wait.
       </p>
     </div>
-
-
 
 
     <% @voyages.each do |voyage| %>
@@ -41,6 +53,8 @@
                 <p class="card-text"><small class="text-muted"><%= voyage.price %></small></p>
           </div>
        </div>
+
+
 
     <% end %>
   <% end %>
@@ -131,12 +145,17 @@
 
     <!--- Chargement page alert sign --->
 
+    <section class="container">
+      <div id="flash">
+
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
 
      <!--- Chargement page --->
 
-
+    <%= yield %>
+   </body>
+</html>
 
 

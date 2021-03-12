@@ -11,3 +11,23 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+
+  h1 {
+    margin: 0;
+  }
+}
+
+
+.voyage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
