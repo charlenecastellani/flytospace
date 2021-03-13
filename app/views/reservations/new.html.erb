@@ -24,7 +24,10 @@
     <p><%= @voyage.description %></p>
     <p> agence : <%= @voyage.user.agency_name %></p>
     
-    <%= link_to "Confirmez", mes_reservations_voyage_reservations_path(@voyage), class: "btn btn-primary"%>
+    <%= simple_form_for [@voyage, @reservation] do |f| %>
+        <%= f.submit "confirmer" %>
+      <% end %>
+    
     <%= link_to "back to list", root_path %>
   </div>
 </div>

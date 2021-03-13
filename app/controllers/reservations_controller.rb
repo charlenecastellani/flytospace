@@ -6,13 +6,17 @@ class ReservationsController < ApplicationController
     
     def create 
         @voyage = Voyage.find(params[:voyage_id])
-        @reservation = Reservation.new(reservation_params)
+        @reservation = Reservation.new(statut: "en cours")
+    
         @reservation.voyage = @voyage
         @reservation.user_id = current_user.id
-        @reservation.save 
+
         
-    
-    redirect_to mes_reservations_voyage_reservations_path(@reservation)
+        if @reservation.save
+          redirect_to mes_reservations_voyage_reservations_path(@reservation)
+        else
+          render "voyages/index"
+        end
     end
 
     def destroy 
@@ -27,9 +31,5 @@ class ReservationsController < ApplicationController
         @reservations = Reservation.where(user_id: current_user.id)
     end
     
-    private
-
-    def reservation_params
-      params.require(:reservation).permit(:statut, :user_id, :voyages_id)
-    end
+  
 end
