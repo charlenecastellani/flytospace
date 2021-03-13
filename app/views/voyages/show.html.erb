@@ -1,37 +1,39 @@
 
-
-<center>
-<h1>Check this amazing planet</h1>
-</center>
-
-<div class="title-container">
-
-<br>
-<br>
-
 <center>
 
-
-<div class="card" style="width: 58rem;">
- <%= cl_image_tag @voyage.photo.key, height: 300, width: 400, crop: :fill %>
-  <div class="card-body">
-    
-    
-    <strong><p><%= @voyage.price %>M€</strong></p>
-    <p><%= @voyage.description %></p>
-    <p> agence : <%= @voyage.user.agency_name %></p>
-    
-
-   <%= link_to "Réserver", new_voyage_reservation_path(@voyage), class: "btn btn-primary"%>
-
-    <%= link_to "back to list", root_path %>
+<div class="planet">
+<br>
+<h2>Check this amazing planet</h2>
+  <div>
+   <a href="https://images.pexels.com/photos/4367584/pexels-photo-4367584.jpeg?cs=srgb&dl=pexels-timelockz-4367584.jpg&fm=jpg"></a>
   </div>
+
+  <div class="title-container">
+  <div class="card" style="width: 60rem;">
+   <%= cl_image_tag @voyage.photo.key, height: 800, width: 1000, crop: :fill %>
+    <div class="card-body">
+
+
+      <strong><p><%= @voyage.price %>M€</strong></p>
+      <p><%= @voyage.description %></p>
+      <p> agence : <%= @voyage.user.agency_name %></p>
+
+
+     <%= link_to "Réserver", new_voyage_reservation_path(@voyage), class: "btn btn-primary"%>
+     <%= link_to "back to list", root_path, class: "btn btn-primary"%>
+    </div>
+  </div>
+  </div>
+
+
+
+
 </div>
 
-<br>
 
-</center>
-</div>
+
+
+
 
 
 
