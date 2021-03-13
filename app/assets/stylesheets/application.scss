@@ -11,6 +11,7 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "voyages/show";
 
 
 .title-container {
@@ -18,6 +19,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  margin: 0 auto;
 }
 
 html {
@@ -149,4 +151,15 @@ footer {
   text-align: center;
 }
 
+
+.planet {
+padding: 60px 100px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.containerB {
+
+}
 
