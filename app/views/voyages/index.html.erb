@@ -1,76 +1,69 @@
 
+
+
 <!--- Creer lien des voyages --->
+<section class="hero">
+  <h1>TRAVEL WITH US</h1>
+      <h2>Travel beyond stars</h2>
+</section>
 
-<h1>Welcome to Fly to Space</h1>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Gliese_667_Cc_sunset.jpg/1920px-Gliese_667_Cc_sunset.jpg"
-    alt="space" class="rounded w-100" height="800" width="1440">
+<!--- Section Cards --->
 
-<div>
-  <h1>Welcome to Fly to Space</h1>
+<section class="benefits">
+  <header class="benefits-head"></header>
+    <h2>Book your perfect travel</h2>
+  <h3>We cover everything from departure to arrival to your new planet.</h3>
 
+<!--- Partie Cards --->
+<div class="cards">
 
-</div>
-
-<div>
-   <!--- Link to voyages  --->
-</div>
-
-  <!--- New page  --->
-
-
-  <!--- div planet --->
-
-
-  <!--- Photo Home
-
-
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Gliese_667_Cc_sunset.jpg/1920px-Gliese_667_Cc_sunset.jpg" alt="space" class="rounded w-100" height="800" width="1440">
- --->
-    <!--- Carousel  --->
-
-
-    <div class="container py-3">
-
-
-    <!--- Text paragraph  --->
-    <div class="voyages">
-
-       <p>You can now travel anywhere in the cosmos. How about to look at our destinations below and book your travel. <br>
-         You can't get your own quarter and privacy with your own EcoGarden and facilities. Only few planets left. Don't wait.
-      </p>
-    </div>
-
-
-    <% @voyages.each do |voyage| %>
+<!--- Block Cards x 3 --->
+ <% @voyages.each do |voyage| %>
       <%= link_to voyage_path(voyage) do  %>
        <div class="card-deck">
          <div class="card">
-          <%= cl_image_tag voyage.photo.key, height: 300, width: 300, crop: :fill %>
+          <%= cl_image_tag voyage.photo.key, height: 300, width: 500, crop: :fill %>
             <div class="card-body">
                 <h5 class="card-title"><%= voyage.destination %></h5>
                 <p class="card-text"><%= voyage.year %></p>
                 <p class="card-text"><small class="text-muted"><%= voyage.price %></small></p>
           </div>
        </div>
-
-
-
     <% end %>
   <% end %>
+<!--- Fin Block Cards x 3 --->
+
+
+</section>
+<!--- Fin Cards --->
+<!--
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Gliese_667_Cc_sunset.jpg/1920px-Gliese_667_Cc_sunset.jpg"
+ alt="space" class="rounded w-100" height="800" width="1440">
+ -->
+    <!--- Carousel
+
+    <div class="container py-3">
+ --->
+
+
+    <!--- Text paragraph  --->
+    <div class="voyages">
+
+       <p>You can now travel anywhere in the cosmos. How about to look at our destinations below and book your travel. <br>
+        <br>
+         You can't get your own quarter and privacy with your own EcoGarden and facilities. Only few planets left. Don't wait.
+      </p>
+    </div>
+
+ <!--- Mosaique voyages/layout --->
 
 
 
 
 
 
-       <!--- Mosaique voyages/layout --->
 
           <!--- Grille bootstrap  --->
-
-
-<!--- Dur a supprimer  --->
-
 
 
 <!--- Dur a supprimer --->
@@ -145,8 +138,7 @@
 
     <!--- Chargement page alert sign --->
 
-    <section class="container">
-      <div id="flash">
+
 
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>

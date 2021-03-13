@@ -18,16 +18,126 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-
-
-  h1 {
-    margin: 0;
-  }
 }
 
+html {
+  font-size: 20px;
+}
+
+
+body{
+font-family: "Poppins", sans-serif;
+}
 
 .voyage {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+
+li,
+button,
+label,
+input,
+
+p {
+  font-size: 22px;
+  color: grey;
+  font-weight: normal;
+}
+
+
+
+h1 {
+    font-size: 120px;
+    display: center;
+    color: yellow;
+    font-family: 'Electrolize', sans-serif;
+  }
+
+h2 {
+  font-size: 28px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+h3 {
+  font-size: 20px;
+  color: red;
+}
+
+
+h4 {
+font-size: 20px;
+color: red;
+}
+
+h5 {
+  font-size: 28px;
+  color: blue;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+
+
+button {
+  padding: 2rem 6rem;
+  background: #4c6e97;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+
+.benefits-head {
+  background: #343A40;
+  padding: 3rem;
+  min-height:  30vh;
+}
+
+//cards section
+
+//nav section
+
+.main-head {
+  background: #131c27;
+}
+
+#logo {
+  flex: 2 1 40rem;
+}
+
+.navbar-brand {
+  flex: 2 1 40rem;
+  font-family: 'Electrolize', sans-serif;
+  font-weight: 400;
+}
+
+.hero{
+  min-height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.5),transparent),url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Gliese_667_Cc_sunset.jpg/1920px-Gliese_667_Cc_sunset.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.hero h2 {
+  padding: 5rem;
+}
+
+
+
+
