@@ -1,15 +1,48 @@
 
+<<<<<<< HEAD
+<center>
+<h1>Check this amazin planet</h1>
+<center>
+
+<div class="title-container">
+=======
+>>>>>>> aa8d059493a56539e451f5d605b4cb0431f283c2
 <br>
 <br>
 
 <center>
 
+<<<<<<< HEAD
+<center>
+=======
 <h1><%= @voyage.destination %>
 
+>>>>>>> aa8d059493a56539e451f5d605b4cb0431f283c2
 
+  <div class="card" style="width: 70rem;">
+     <%= cl_image_tag @voyage.photo.key, height: 600, width: 1000, crop: :fill %>
+      <div class="card-body">
 
 </h1>
 
+<<<<<<< HEAD
+          <strong><p><%= @voyage.price %>M€</strong></p>
+          <p><%= @voyage.year %></p>
+          <p><%= @voyage.description %></p>
+
+          <p> Agence : <%= @voyage.user_id %></p>
+
+            <%= link_to "Réservez", new_voyage_reservation_path(@voyage), class: "btn btn-primary"%>
+
+            <%= link_to "back to list", root_path, class: "btn btn-primary"%>
+
+          </center>
+
+          </div>
+        </div>
+      </div>
+  </div>
+=======
 <p><%= @voyage.year %></p>
 
 </center>
@@ -43,4 +76,5 @@
 <%= link_to "Delete", voyage_path(@voyage), method: :delete %>
 <%= link_to "back to list", root_path %>
 
+>>>>>>> aa8d059493a56539e451f5d605b4cb0431f283c2
 
