@@ -37,47 +37,50 @@ label,
 input,
 
 p {
-  font-size: 22px;
+  font-size: 28px;
   color: grey;
   font-weight: normal;
 }
 
 
-
 h1 {
-    font-size: 120px;
+    font-size: 200px;
     display: center;
     color: yellow;
     font-family: 'Electrolize', sans-serif;
   }
 
 h2 {
-  font-size: 28px;
+  font-size: 80px;
   color: white;
   font-family: "Poppins", sans-serif;
 }
 
+
+
 h3 {
-  font-size: 20px;
+font-size: 32px;
+color: green;
+}
+
+h4 {
+  font-size: 32px;
   color: red;
 }
 
 
-h4 {
-font-size: 20px;
-color: red;
-}
-
 h5 {
-  font-size: 28px;
+  font-size: 42px;
   color: blue;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
-  color: blue;
+  font-size: 24px;
+  color: white;
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
 }
-
 
 
 button {
@@ -88,8 +91,6 @@ button {
   font-size: 1.8rem;
   cursor: pointer;
 }
-
-
 
 
 
@@ -135,6 +136,17 @@ button {
 
 
 
-
+footer {
+  display: block;
+  background: #343A40;
+  padding: 3rem;
+  min-height:  10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
 
 

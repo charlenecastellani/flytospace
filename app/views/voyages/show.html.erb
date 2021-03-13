@@ -1,4 +1,7 @@
 
+<center>
+<h1>Check this amazin planet</h1>
+<center>
 
 <div class="title-container">
 <br>
@@ -6,36 +9,27 @@
 
 </div>
 
-
 <center>
 
+  <div class="card" style="width: 70rem;">
+     <%= cl_image_tag @voyage.photo.key, height: 600, width: 1000, crop: :fill %>
+      <div class="card-body">
 
 
+          <strong><p><%= @voyage.price %>M€</strong></p>
+          <p><%= @voyage.year %></p>
+          <p><%= @voyage.description %></p>
 
+          <p> Agence : <%= @voyage.user_id %></p>
 
-<div class="card" style="width: 58rem;">
- <%= cl_image_tag @voyage.photo.key, height: 600, width: 900, crop: :fill %>
-  <div class="card-body">
+            <%= link_to "Réservez", new_voyage_reservation_path(@voyage), class: "btn btn-primary"%>
 
+            <%= link_to "back to list", root_path, class: "btn btn-primary"%>
 
-    <strong><p><%= @voyage.price %>M€</strong></p>
-    <p><%= @voyage.year %></p>
-    <p><%= @voyage.description %></p>
+          </center>
 
-    <p> Agence : <%= @voyage.user_id %></p>
-    
-   <%= link_to "Réservez", new_voyage_reservation_path(@voyage), class: "btn btn-primary"%>
-
+          </div>
+        </div>
+      </div>
   </div>
-</div>
-
-<br>
-
-
-<%= link_to "back to list", root_path %>
-
-</center>
-</div>
-
-
 
