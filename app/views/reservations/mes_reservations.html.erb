@@ -14,7 +14,7 @@
 
 <% @reservations.each do |reservation| %>
 <div class="col-12 col-md-8 col-lg-10">
-    <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(255,255,255) url('https://wallpapertag.com/wallpaper/full/a/a/5/116701-black-background-images-1920x1200-pictures.jpg');">
+    <div class="card">
         <div class="card-description">
             <h2><%= voyage.destination %></h2>
             <p><%= voyage.year %></p>
@@ -28,7 +28,7 @@
 <%end%>
 
 <br>
-<%= link_to "Add a voyage", new_voyage_path, class: "btn btn-primary btn-lg" %>
+
 
 <br>
 <%= link_to "back to list", root_path %>
