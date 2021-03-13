@@ -1,44 +1,40 @@
 
+
+<div class="title-container">
 <br>
-<br>
+<h2><%= @voyage.destination %></h2>
+
+</div>
+
 
 <center>
 
-<h1><%= @voyage.destination %>
 
 
-
-</h1>
-
-<p><%= @voyage.year %></p>
-
-</center>
-
-<div>
-
-<center>
 
 
 <div class="card" style="width: 58rem;">
- <%= cl_image_tag @voyage.photo.key, height: 300, width: 400, crop: :fill %>
+ <%= cl_image_tag @voyage.photo.key, height: 600, width: 900, crop: :fill %>
   <div class="card-body">
-    
-    
+
+
     <strong><p><%= @voyage.price %>M€</strong></p>
+    <p><%= @voyage.year %></p>
     <p><%= @voyage.description %></p>
     <p> agence : <%= @voyage.user_id %></p>
-    
+
    <%= link_to "Réservez", new_voyage_reservation_path(@voyage), class: "btn btn-primary"%>
-    <%= link_to "back to list", root_path %>
+
   </div>
 </div>
 
 <br>
 
+
+<%= link_to "back to list", root_path %>
+
 </center>
 </div>
 
-
-<%= link_to "back to list", root_path %>
 
 
