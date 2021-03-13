@@ -1,4 +1,5 @@
 
+<div class="booking"></div>
 <h1>Je réserve </h1>
 
 <center>
@@ -18,16 +19,16 @@
 <div class="card" style="width: 58rem;">
  <%= cl_image_tag @voyage.photo.key, height: 300, width: 400, crop: :fill %>
   <div class="card-body">
-    
-    
+
+
     <strong><p><%= @voyage.price %>M€</strong></p>
     <p><%= @voyage.description %></p>
     <p> agence : <%= @voyage.user.agency_name %></p>
-    
+
     <%= simple_form_for [@voyage, @reservation] do |f| %>
         <%= f.submit "confirmer" %>
       <% end %>
-    
+
     <%= link_to "back to list", root_path %>
   </div>
 </div>

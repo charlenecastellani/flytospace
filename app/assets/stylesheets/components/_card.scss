@@ -41,7 +41,13 @@ grid-template-rows: auto;
 
 
 //size cards with 30vh or 40 min-height with align-items from cards.
+//
+.card-deck {
+width: 25%;
+}
+
 .card {
+  width: 100%;
 text-align: center;
 flex: 1 1 25rem;
 min-height: 20vh;
