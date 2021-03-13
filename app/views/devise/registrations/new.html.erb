@@ -4,14 +4,13 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.label :first_name %>
-    <%= f.text_field :first_name %>
-    <%= f.label :last_name %>
-    <%= f.text_field :last_name %>
+
+    <%= f.input :first_name %>
+    
+    <%= f.input :last_name %>
     <%= f.label :agency %>
     <%= f.input_field :agency_status, as: :boolean %>
-    <%= f.label :agency_name %>
-    <%= f.text_field :agency_name %>
+    <%= f.input :agency_name %>
     
     <%= f.input :email,
                 required: true,
