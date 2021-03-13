@@ -29,11 +29,6 @@ body{
 font-family: "Poppins", sans-serif;
 }
 
-.voyage {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
 
 
 li,
@@ -95,11 +90,8 @@ button {
 }
 
 
-.benefits-head {
-  background: #343A40;
-  padding: 3rem;
-  min-height:  30vh;
-}
+
+
 
 //cards section
 
@@ -112,6 +104,8 @@ button {
 #logo {
   flex: 2 1 40rem;
 }
+
+
 
 .navbar-brand {
   flex: 2 1 40rem;
@@ -137,6 +131,9 @@ button {
 .hero h2 {
   padding: 5rem;
 }
+
+
+
 
 
 

@@ -1,138 +1,61 @@
 
-
-
 <!--- Creer lien des voyages --->
 <section class="hero">
   <h1>TRAVEL WITH US</h1>
-      <h2>Travel beyond stars</h2>
+
 </section>
 
+<center>
 <!--- Section Cards --->
 
 <section class="benefits">
-  <header class="benefits-head"></header>
-    <h2>Book your perfect travel</h2>
+  <header class="benefits-head">
+      <h2>Travel beyond stars</h2>
+      <h2>Book your perfect travel</h2>
   <h3>We cover everything from departure to arrival to your new planet.</h3>
+  </header>
+
 
 <!--- Partie Cards --->
-<div class="cards">
+
+
+<p>You can now travel anywhere in the cosmos. How about to look at our destinations below and book your travel. <br>
+         You can't get your own quarter and privacy with your own EcoGarden and facilities. Only few planets left. Don't wait.
+      </p>
+
+  <div class="cards">
 
 <!--- Block Cards x 3 --->
  <% @voyages.each do |voyage| %>
       <%= link_to voyage_path(voyage) do  %>
        <div class="card-deck">
          <div class="card">
-          <%= cl_image_tag voyage.photo.key, height: 300, width: 500, crop: :fill %>
+           <%= cl_image_tag voyage.photo.key, height: 400, width: 500, crop: :fill %>
             <div class="card-body">
                 <h5 class="card-title"><%= voyage.destination %></h5>
                 <p class="card-text"><%= voyage.year %></p>
                 <p class="card-text"><small class="text-muted"><%= voyage.price %></small></p>
-          </div>
+              </div>
+              </div>
        </div>
     <% end %>
   <% end %>
 <!--- Fin Block Cards x 3 --->
 
 
+
 </section>
 <!--- Fin Cards --->
-<!--
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Gliese_667_Cc_sunset.jpg/1920px-Gliese_667_Cc_sunset.jpg"
- alt="space" class="rounded w-100" height="800" width="1440">
- -->
-    <!--- Carousel
-
-    <div class="container py-3">
- --->
 
 
-    <!--- Text paragraph  --->
+    <!--- Text paragraph
     <div class="voyages">
-
+      --->
        <p>You can now travel anywhere in the cosmos. How about to look at our destinations below and book your travel. <br>
         <br>
          You can't get your own quarter and privacy with your own EcoGarden and facilities. Only few planets left. Don't wait.
       </p>
     </div>
-
- <!--- Mosaique voyages/layout --->
-
-
-
-
-
-
-
-          <!--- Grille bootstrap  --->
-
-
-<!--- Dur a supprimer --->
-
-      <!-- <div class="card-deck">
-        <div class="card">
-          <img class="card-img-top" src="https://images.pexels.com/photos/586056/pexels-photo-586056.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="https://images.pexels.com/photos/586056/pexels-photo-586056.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-
-      <br>
-       --->
-
-        <!--- Partie 2   --->
-<!--
-         <div class="card-deck">
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    --->
-
-
-
 
 
 
@@ -150,4 +73,4 @@
    </body>
 </html>
 
-
+</center>
