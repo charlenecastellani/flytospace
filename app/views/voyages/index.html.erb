@@ -5,7 +5,6 @@
 
 </section>
 
-<center>
 <!--- Section Cards --->
 
 <section class="benefits">
@@ -14,19 +13,13 @@
       <h2>Book your perfect travel</h2>
   <h3>We cover everything from departure to arrival to your new planet.</h3>
   </header>
-
+</section>
 
 <!--- Partie Cards --->
-
-
-<p>You can now travel anywhere in the cosmos. How about to look at our destinations below and book your travel. <br>
-         You can't get your own quarter and privacy with your own EcoGarden and facilities. Only few planets left. Don't wait.
-      </p>
-
   <div class="cards">
 
 <!--- Block Cards x 3 --->
- <% @voyages.each do |voyage| %>
+  <% @voyages.each do |voyage| %>
       <%= link_to voyage_path(voyage) do  %>
        <div class="card-deck">
          <div class="card">
@@ -35,16 +28,13 @@
                 <h5 class="card-title"><%= voyage.destination %></h5>
                 <p class="card-text"><%= voyage.year %></p>
                 <p class="card-text"><small class="text-muted"><%= voyage.price %></small></p>
-              </div>
-              </div>
+            </div>
+        </div>
        </div>
     <% end %>
   <% end %>
 <!--- Fin Block Cards x 3 --->
-
-
-
-</section>
+  </div>
 <!--- Fin Cards --->
 
 
@@ -55,22 +45,3 @@
         <br>
          You can't get your own quarter and privacy with your own EcoGarden and facilities. Only few planets left. Don't wait.
       </p>
-    </div>
-
-
-
-    <!--- Chargement page alert sign --->
-
-
-
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
-
-     <!--- Chargement page --->
-
-    <%= yield %>
-   </body>
-</html>
-
-</center>
