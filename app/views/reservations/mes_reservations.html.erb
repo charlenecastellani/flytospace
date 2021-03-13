@@ -1,11 +1,12 @@
 
-
-<br>
-<br>
+<div class="title-container">
+  <h1>Mes réservations</h1>
+<h2><%= @voyage.destination %></h2>
+</div>
 
 <center>
 
-  <h1>Mes réservations</h1>
+
 
 
 
@@ -22,7 +23,7 @@
         </div>
     </div>
     <%= link_to "Delete", reservation_path(reservation), method: :delete %>
-    
+
 </div>
 <%end%>
 
