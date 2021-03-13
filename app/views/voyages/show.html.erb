@@ -26,7 +26,8 @@
     
     <strong><p><%= @voyage.price %>M€</strong></p>
     <p><%= @voyage.description %></p>
-    <p> agence : <%= @voyage.user_id %></p>
+
+    <p> Agence : <%= @voyage.user_id %></p>
     
    <%= link_to "Réservez", new_voyage_reservation_path(@voyage), class: "btn btn-primary"%>
     <%= link_to "back to list", root_path %>
@@ -38,7 +39,5 @@
 </center>
 </div>
 
-
-<%= link_to "back to list", root_path %>
 
 

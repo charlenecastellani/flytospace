@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
     if current_user.agency_status == true
     stored_location_for(resource) || dashboard_voyages_path
     else 
-    stored_location_for(resource) || mes_reservations_voyage_reservations_path
+    stored_location_for(resource) || mes_reservations_voyage_reservations_path(:voyage_id)
     end
   end
 end

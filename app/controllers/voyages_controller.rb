@@ -17,6 +17,7 @@ class VoyagesController < ApplicationController
     @voyage = Voyage.new(voyage_params)
     @voyage.user_id = current_user.id
     @voyage.save 
+    
 
     redirect_to dashboard_voyages_path(@voyage)
   end
