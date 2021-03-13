@@ -16,14 +16,13 @@
 <div class="col-12 col-md-8 col-lg-10">
     <div class="card">
         <div class="card-description">
-            <h2><%= voyage.destination %></h2>
-            <p><%= voyage.year %></p>
-           <p><%= voyage.price %>M€</p>
+            <h2><%= reservation.voyage.destination %></h2>
+            <p><%= reservation.voyage.year %></p>
+           <p><%= reservation.voyage.price %>M€</p>
            <p><%= reservation.statut %></p>
         </div>
     </div>
     <%= link_to "Delete", reservation_path(reservation), method: :delete %>
-
 </div>
 <%end%>
 
